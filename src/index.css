@@ -15,20 +15,19 @@
 }
 
 a {
-  font-weight: 500;
-  color: #ffffff;
+  font-weight: 200 bold;
+  color: #2F4172;
   text-decoration: inherit;
-}
-a:hover {
-  color: #a6a938;
 }
 
 body {
-  margin: 0;
+  margin-top: 150px;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+
+
+ 
 }
 
 h1 {
@@ -38,29 +37,32 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 3px solid #2F4172;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
-  
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: #ffffff;  
+  color:#2F4172;
 }
+
 button:hover {
   border-color: #a6a938;
- 
 }
 
+div.cuadrados{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: space-between;
+}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #AA3f39;
-    background: #333333;
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-  }
-
-  button {
-    background-color: #2f4172;
-  }
+div.cuadrados-signup{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
